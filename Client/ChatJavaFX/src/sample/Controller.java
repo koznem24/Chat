@@ -88,7 +88,7 @@ public class Controller extends Application {
 
     private void setUpNetworking(){
         try{
-            sock = new Socket("koznem.cloudns.cl", 9000);
+            sock = new Socket("Server Name is supposed to be here", "Port number is here");
             InputStreamReader streamReader = new InputStreamReader(sock.getInputStream());
             reader = new BufferedReader(streamReader);
             writer = new PrintWriter(sock.getOutputStream());
